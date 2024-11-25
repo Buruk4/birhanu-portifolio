@@ -87,13 +87,6 @@
     left: 290px;
     width: 20px;
   }
-  .logo-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 10px;
-    z-index: 1000;
-  }
 }
 
 /* 481px — 768px: iPads, Tablets */
@@ -134,13 +127,6 @@
     top: 20px;
     left: 300px;
     width: 30px;
-  }
-  .logo-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 10px;
-    z-index: 1000;
   }
 }
 
