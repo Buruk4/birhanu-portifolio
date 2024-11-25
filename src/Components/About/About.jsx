@@ -60,7 +60,6 @@ const About = () => {
           <h1>10+</h1>
           <p>HAPPY CLIENTS</p>
         </div>
-        <hr />
       </div>
     </div>
   );

@@ -30,7 +30,6 @@
   background: #32323b;
   padding-right: 80px;
 }
-
 .footer-email-input input {
   outline: none;
   border: none;
@@ -64,24 +63,108 @@
   gap: 50px;
   margin-bottom: 50px;
 }
-@media (max-width: 768px) {
+
+/* 320px — 480px: Mobile devices */
+@media (max-width: 480px) {
   .footer {
-    margin: 50px 70px;
+    margin: 30px 20px;
+    gap: 20px;
+  }
+  .footer-top {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer-top-left {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .footer-top-right {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-email-input {
+    padding: 18px 20px;
+    gap: 25px;
+  }
+  .footer-subscribe {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    font-size: 16px;
+  }
+  .footer-bottom-right {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* 481px — 768px: iPads, Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .footer {
+    margin: 40px 50px;
   }
   .footer-top {
     flex-direction: column;
     gap: 50px;
   }
-  .footer-bottom {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: 50px;
-  }
   .footer-top-right {
     flex-direction: column;
+    gap: 25px;
+  }
+  .footer-email-input {
+    padding: 18px 20px;
+    gap: 25px;
+  }
+  .footer-subscribe {
+    font-size: 18px;
+    padding: 16px 30px;
+  }
+  .footer-bottom {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .footer-bottom-right {
+    gap: 30px;
+  }
+}
+
+/* 769px — 1024px: Small screens, laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    margin: 50px 100px;
+  }
+  .footer-top-left {
+    font-size: 18px;
+  }
+  .footer-email-input {
+    padding: 20px 25px;
+  }
+  .footer-subscribe {
+    font-size: 18px;
+    padding: 20px 40px;
+  }
+  .footer-bottom-right {
+    gap: 40px;
+  }
+}
+
+/* 1025px — 1200px: Desktops, large screens */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .footer {
+    margin: 50px 120px;
+  }
+  .footer-top-left {
+    font-size: 20px;
+  }
+  .footer-email-input {
+    padding: 22px 30px;
   }
   .footer-subscribe {
     font-size: 20px;
-    padding: 15px 40px;
+    padding: 22px 50px;
   }
 }

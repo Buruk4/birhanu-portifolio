@@ -3,10 +3,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* gap: 40px; */
   margin: 20px 170px;
   /* margin-left: 10px; */
 }
+
 .navbar img {
   width: 60px;
   height: 60px;
@@ -35,9 +35,7 @@
   gap: 5px;
   cursor: pointer;
 }
-
 .nav-menu li img {
-  display: flex;
   margin: auto;
 }
 .anchor-link {
@@ -50,9 +48,11 @@
 .nav-mob-open {
   display: none;
 }
-@media (max-width: 768px) {
+
+/* 320px — 480px: Mobile devices */
+@media (max-width: 480px) {
   .navbar {
-    margin: 20px 50px;
+    margin: 10px 30px;
   }
   .nav-connect {
     display: none;
@@ -60,14 +60,7 @@
   .nav-mob-open {
     display: block;
     position: fixed;
-    right: 30px;
-  }
-  .nav-mob-close {
-    display: block;
-    position: relative;
-    top: 30px;
-    left: 290px;
-    width: 30px;
+    right: 20px;
   }
   .nav-menu {
     position: fixed;
@@ -83,9 +76,127 @@
     right: -350px;
   }
   .nav-menu li {
-    font-size: 30px;
-    padding-left: 100px;
-    flex-direction: row;
-    gap: 20px;
+    font-size: 18px;
+    padding-left: 20px;
+    gap: 10px;
+  }
+  .nav-mob-close {
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 290px;
+    width: 20px;
+  }
+  .logo-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 1000;
+  }
+}
+
+/* 481px — 768px: iPads, Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar {
+    margin: 20px 50px;
+  }
+  .nav-connect {
+    display: none;
+  }
+  .nav-mob-open {
+    display: block;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+  }
+  .nav-menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    gap: 30px;
+    background-color: #1f0016;
+    width: 350px;
+    height: 100%;
+    z-index: 2;
+    transition: right 0.5s;
+    right: -350px;
+  }
+  .nav-menu li {
+    font-size: 24px;
+    padding-left: 30px;
+    gap: 15px;
+  }
+  .nav-mob-close {
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 300px;
+    width: 30px;
+  }
+  .logo-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 1000;
+  }
+}
+
+/* 769px — 1024px: Small screens, laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    margin: 20px 50px;
+  }
+  .nav-connect {
+    display: none;
+  }
+  .nav-mob-open {
+    display: block;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+  }
+  .nav-menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100%;
+    background-color: #1f0016;
+    z-index: 2;
+    transition: right 0.5s;
+    padding: 30px;
+    gap: 30px;
+  }
+  .nav-menu li {
+    font-size: 24px;
+    padding-left: 30px;
+    gap: 15px;
+  }
+  .nav-mob-close {
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 300px;
+    width: 30px;
+  }
+}
+
+/* 1025px — 1200px: Desktops, large screens */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .navbar {
+    margin: 20px 140px;
+  }
+  .nav-connect {
+    padding: 20px 30px;
+    font-size: 22px;
+  }
+  .nav-menu {
+    gap: 50px;
+    font-size: 20px;
   }
 }
