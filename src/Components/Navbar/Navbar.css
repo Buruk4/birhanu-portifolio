@@ -3,13 +3,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 170px;
+  /* margin: 20px 170px; */
   /* margin-left: 10px; */
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #1f0016;
+  color: #1f0016;
 }
 
 .navbar img {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 }
 .nav-menu {
@@ -47,13 +53,25 @@
 }
 .nav-mob-open {
   display: none;
+  width: 20px;
+  height: 20px;
+}
+/* today-edition */
+.logo-header {
+  display: flex;
+  gap: 26px;
+  align-items: center;
+}
+
+.logo-header h2 {
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  color: white;
 }
 
 /* 320px — 480px: Mobile devices */
 @media (max-width: 480px) {
-  .navbar {
-    margin: 10px 30px;
-  }
   .nav-connect {
     display: none;
   }
@@ -61,6 +79,7 @@
     display: block;
     position: fixed;
     right: 20px;
+    top: 5px;
   }
   .nav-menu {
     position: fixed;
@@ -87,13 +106,14 @@
     left: 290px;
     width: 20px;
   }
+  .anchor-link {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 /* 481px — 768px: iPads, Tablets */
 @media (min-width: 481px) and (max-width: 768px) {
-  .navbar {
-    margin: 20px 50px;
-  }
   .nav-connect {
     display: none;
   }
@@ -101,7 +121,7 @@
     display: block;
     position: fixed;
     right: 30px;
-    top: 20px;
+    top: 5px;
   }
   .nav-menu {
     position: fixed;
@@ -127,14 +147,15 @@
     top: 20px;
     left: 300px;
     width: 30px;
+  }
+  .anchor-link {
+    text-decoration: none;
+    color: white;
   }
 }
 
 /* 769px — 1024px: Small screens, laptops */
 @media (min-width: 769px) and (max-width: 1024px) {
-  .navbar {
-    margin: 20px 50px;
-  }
   .nav-connect {
     display: none;
   }
@@ -149,14 +170,13 @@
     flex-direction: column;
     align-items: start;
     top: 0;
-    right: -350px;
+    gap: 30px;
+    background-color: #1f0016;
     width: 350px;
     height: 100%;
-    background-color: #1f0016;
     z-index: 2;
     transition: right 0.5s;
-    padding: 30px;
-    gap: 30px;
+    right: -350px;
   }
   .nav-menu li {
     font-size: 24px;
@@ -170,13 +190,14 @@
     left: 300px;
     width: 30px;
   }
+  .anchor-link {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 /* 1025px — 1200px: Desktops, large screens */
 @media (min-width: 1025px) and (max-width: 1200px) {
-  .navbar {
-    margin: 20px 140px;
-  }
   .nav-connect {
     padding: 20px 30px;
     font-size: 22px;
